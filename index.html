@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="ru">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <title>Погода в городах Беларуси</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="header_inner">
+            <a href="#" class="logo">
+                <img src="./img/logo.png" alt="logo">
+                <p class="logo_text">bsuir</p>
+            </a>
+        </div>
+    </div>
+    <div class="main">
+        <div class="container">
+            <div class="main_inner">
+                <h1>Погода в городах Беларуси</h3>
+                    <p>Выберите город:</p>
+                    <select id="cities">
+                        <option value="null" disabled style="color: black" selected>Выберите город</option>
+                    </select>
+
+                    <div id="weatherTable" class="weather">
+                        <h2 id="nameCity"></h2>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-12 col-xs-12">
+                                <div class="day">
+                                    <h3 id="day1">Сегодня</h3>
+                                    <img id="pic1" />
+                                    <div id="time1"></div>
+                                    <div id="temp1"></div>
+                                    <div id="wind1"></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-12 col-xs-12">
+                                <div class="day">
+                                    <h3 id="day2">Завтра</h3>
+                                    <img id="pic2" />
+                                    <div id="time2"></div>
+                                    <div id="temp2"></div>
+                                    <div id="wind2"></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-12 col-xs-12">
+                                <div class="day">
+                                    <h3 id="day3">Послезавтра</h3>
+                                    <img id="pic3" />
+                                    <div id="time3"></div>
+                                    <div id="temp3"></div>
+                                    <div id="wind3"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+
+    </div>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
